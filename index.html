@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ética FC | Manual Ético Interactivo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section id="inicio" class="pantalla activa">
+  <div class="hero">
+    <div class="hero-contenido">
+      <p class="etiqueta">MANUAL ÉTICO INTERACTIVO</p>
+      <h1>ÉTICA <span>FC</span></h1>
+      <h2>Camino a la Excelencia</h2>
+      <p class="descripcion">Las grandes organizaciones no se construyen únicamente con talento. Se construyen con personas capaces de comunicarse, comprender, motivar, actuar con justicia, pensar críticamente y tomar buenas decisiones cuando nadie está mirando.</p>
+      <div class="ficha-jugador"><div class="numero-jugador">10</div><div><small>NUEVO FICHAJE</small><h3>Jugador Ético</h3><p>Posición: Agente de cambio</p></div></div>
+      <button class="btn-principal" onclick="comenzarTemporada()">COMENZAR TEMPORADA ⚽</button>
+    </div>
+    <div class="hero-cancha"><div class="balon">⚽</div><div class="texto-cancha"><small>TEMPORADA</small><strong>11 JORNADAS</strong><span>1 OBJETIVO</span></div></div>
+  </div>
+</section>
+
+<section id="temporada" class="pantalla">
+<header class="navbar"><div class="logo">ÉTICA <span>FC</span></div><div class="marcador-superior"><div><small>INTEGRIDAD</small><strong id="puntosHeader">0</strong></div><div><small>JORNADAS</small><strong><span id="jornadasHeader">0</span>/11</strong></div></div></header>
+<main class="dashboard">
+<section class="bienvenida"><p class="etiqueta">CENTRO DE ENTRENAMIENTO</p><h2>Tu temporada <span>ética</span></h2><p>Completa las 11 jornadas, analiza situaciones laborales y demuestra que puedes convertir los principios éticos en conducta profesional.</p></section>
+<section class="panel-progreso"><div class="progreso-info"><span>PROGRESO DE TEMPORADA</span><span id="porcentaje">0%</span></div><div class="barra"><div id="barraProgreso"></div></div></section>
+<section class="jornadas" id="listaJornadas"></section>
+</main>
+</section>
+
+<section id="juego" class="pantalla">
+<header class="navbar"><button class="btn-volver" onclick="volverTemporada()">← TEMPORADA</button><div class="logo">ÉTICA <span>FC</span></div><div class="puntos-juego">⚡ <span id="puntosJuego">0</span></div></header>
+<main id="contenidoJornada" class="contenido-jornada"></main>
+</section>
+
+<div id="modal" class="modal"><div class="modal-contenido"><div id="modalIcono" class="modal-icono">✓</div><h2 id="modalTitulo">Buena decisión</h2><p id="modalTexto"></p><button onclick="cerrarModal()">CONTINUAR</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
